@@ -37,8 +37,11 @@ export default function AboutPage() {
 						Our approach
 					</p>
 					<p className="mt-3 text-2xl font-semibold leading-tight text-foreground">
-						Understand first. Build carefully. Communicate clearly.
-					</p>
+						Good software starts with people, not code.
+                    </p>
+                    <p className="mt-3 leading-7 text-muted-foreground">
+                        We focus on thoughtful development, clear communication, and writing code we actually understand. Technology is a tool, not a replacement for experience, creativity, or good judgment.
+                    </p>
 				</aside>
 			</div>
 
