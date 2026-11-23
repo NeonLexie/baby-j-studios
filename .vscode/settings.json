@@ -1,3 +1,7 @@
 {
-    "eslint.enable": false
+    "eslint.enable": false,
+    "chat.tools.terminal.autoApprove": {
+        "pnpm": true
+    },
+    "workbench.colorTheme": "Linear Theme - Pale"
 }
