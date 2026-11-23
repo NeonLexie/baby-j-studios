@@ -18,13 +18,13 @@ export default function HomePage() {
         <div className="flex flex-row gap-3">
           <Link
             href="/about"
-            className="mt-10 inline-flex items-center gap-3 rounded-full bg-primary px-6 py-3.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
+            className="mt-10 inline-flex items-center gap-3 rounded-full bg-primary px-6 py-3.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-blush-pink focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
           >
             Get to know us <ArrowRight aria-hidden="true" className="size-4" />
           </Link>
           <Link
             href="/contact"
-            className="mt-10 inline-flex items-center gap-3 rounded-full bg-logo-blue px-6 py-3.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/85 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
+            className="mt-10 inline-flex items-center gap-3 rounded-full bg-logo-blue px-6 py-3.5 text-sm font-medium text-primary-foreground transition-colors hover:bg-blush-pink focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
           >
             Contact us <ArrowRight aria-hidden="true" className="size-4" />
           </Link>
