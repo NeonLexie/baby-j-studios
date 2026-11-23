@@ -18,9 +18,9 @@
   --ink-navy: #283447;
   --dusty-periwinkle: #a7b5cf;
   --siamese-gray: #858d9e;
-  --logo-blue: #9ceff9;
+	--logo-blue: #62cfe0;
   --marigold: #ebcb68;
-  --blush-pink: #e9bfd4;
+	--blush-pink: #e59fbe;
 
   /* Light mode */
   --background: #f0f1f3;
@@ -55,7 +55,7 @@
   --chart-2: #858d9e;
   --chart-3: #a7b5cf;
   --chart-4: #ebcb68;
-  --chart-5: #e9bfd4;
+	--chart-5: var(--blush-pink);
 
   /* Sidebar */
   --sidebar: #dce7ed;
@@ -73,6 +73,9 @@
    ========================================= */
 
 .dark {
+  --logo-blue: #9ceff9;
+  --blush-pink: #e9bfd4;
+
   --background: #19212e;
   --foreground: #f0f1f3;
 

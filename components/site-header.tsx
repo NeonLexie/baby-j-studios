@@ -49,7 +49,7 @@ function HeaderContent({ pathname }: { pathname: string }) {
 							key={href}
 							href={href}
 							aria-current={pathname === href ? "page" : undefined}
-							className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring aria-[current=page]:text-foreground"
+							className="text-sm font-medium text-muted-foreground underline-offset-4 transition-colors hover:text-foreground hover:underline hover:decoration-marigold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring aria-[current=page]:text-foreground"
 						>
 							{label}
 						</Link>
@@ -85,7 +85,7 @@ function HeaderContent({ pathname }: { pathname: string }) {
 						href={href}
 						aria-current={pathname === href ? "page" : undefined}
 						onClick={() => setMenuOpen(false)}
-						className="block rounded-md px-2 py-3 text-sm font-medium text-muted-foreground hover:bg-secondary hover:text-foreground focus-visible:outline-2 focus-visible:outline-ring aria-[current=page]:text-foreground"
+						className="block rounded-md px-2 py-3 text-sm font-medium text-muted-foreground underline-offset-4 hover:bg-secondary hover:text-foreground hover:underline hover:decoration-marigold focus-visible:outline-2 focus-visible:outline-ring aria-[current=page]:text-foreground"
 					>
 						{label}
 					</Link>
