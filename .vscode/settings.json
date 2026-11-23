@@ -1,7 +1,11 @@
 {
     "eslint.enable": false,
     "chat.tools.terminal.autoApprove": {
-        "pnpm": true
+        "pnpm": true,
+        "/^node -e 'const sharp=require\\(\"sharp\"\\); Promise\\.all\\(process\\.argv\\.slice\\(1\\)\\.map\\(async p=>\\{let m=await sharp\\(p\\)\\.metadata\\(\\);let \\{info\\}=await sharp\\(p\\)\\.trim\\(\\)\\.toBuffer\\(\\{resolveWithObject:true\\}\\); console\\.log\\(p,JSON\\.stringify\\(\\{width:m\\.width,height:m\\.height,trimmedWidth:info\\.width,trimmedHeight:info\\.height,trimOffsetLeft:info\\.trimOffsetLeft,trimOffsetTop:info\\.trimOffsetTop\\}\\)\\);\\}\\)\\)\\.catch\\(console\\.error\\)' public/images/Baby_J\\.png public/images/Baby_J_Studios_Text\\.png$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
     },
-    "workbench.colorTheme": "Linear Theme - Pale"
+    "workbench.colorTheme": "Dainty – Mirage"
 }
