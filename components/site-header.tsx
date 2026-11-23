@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Image from "next/image";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const links = [
 	{ href: "/", label: "Home" },
@@ -32,13 +33,13 @@ function HeaderContent({ pathname }: { pathname: string }) {
 					className="flex shrink-0 items-center gap-1 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
 				>
 					<Image src="/images/Baby_J.png" alt="" width={48} height={48} />
-					<span className="relative block h-6 w-40 overflow-hidden">
+					<span className="relative block h-5 w-28 overflow-hidden sm:h-6 sm:w-40">
 						<Image
 							src="/images/Baby_J_Studios_Text.png"
 							alt="Baby J Studios"
 							width={170}
 							height={170}
-							className="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 translate-y-[-52%]"
+							className="absolute top-1/2 left-1/2 h-auto w-29.75 max-w-none -translate-x-1/2 translate-y-[-52%] sm:w-42.5"
 						/>
 					</span>
 				</Link>
@@ -56,16 +57,19 @@ function HeaderContent({ pathname }: { pathname: string }) {
 					))}
 				</nav>
 
-				<button
-					type="button"
-					aria-label={menuOpen ? "Close menu" : "Open menu"}
-					aria-expanded={menuOpen}
-					aria-controls="mobile-navigation"
-					onClick={() => setMenuOpen(!menuOpen)}
-					className="inline-flex size-10 items-center justify-center rounded-full border border-border transition-colors hover:bg-secondary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring md:hidden"
-				>
-					{menuOpen ? <X aria-hidden="true" className="size-5" /> : <Menu aria-hidden="true" className="size-5" />}
-				</button>
+				<div className="flex items-center gap-2">
+					<ThemeToggle />
+					<button
+						type="button"
+						aria-label={menuOpen ? "Close menu" : "Open menu"}
+						aria-expanded={menuOpen}
+						aria-controls="mobile-navigation"
+						onClick={() => setMenuOpen(!menuOpen)}
+						className="inline-flex size-10 items-center justify-center rounded-full border border-border transition-colors hover:bg-secondary focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring md:hidden"
+					>
+						{menuOpen ? <X aria-hidden="true" className="size-5" /> : <Menu aria-hidden="true" className="size-5" />}
+					</button>
+				</div>
 			</div>
 
 			<nav
